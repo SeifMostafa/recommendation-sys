@@ -115,8 +115,8 @@ public class FirstRatings {
 	}
 
 	public double findAverageRatingForMovieByID(ArrayList<Rater> raters, String movieID) {
-		int sum = 0;
-		int numRaters = 0;
+		double sum = 0;
+		double numRaters = 0;
 		for (Rater rater : raters) {
 			double rate = rater.getRating(movieID);
 			if (rate != -1) {
